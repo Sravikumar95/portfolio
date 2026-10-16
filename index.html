@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanapala Ravi Kumar | Software Engineer & ECE Undergraduate</title>
+  <meta name="description" content="Portfolio of Sanapala Ravi Kumar — B.Tech in Electronics and Communication Engineering at SVNIT Surat. Full-stack developer skilled in Node.js, Express, MySQL, Python, and C++." />
+  <meta name="author" content="Sanapala Ravi Kumar" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sanapala Ravi Kumar | Portfolio" />
+  <meta property="og:description" content="Electronics and Communication Engineering undergraduate at SVNIT Surat. Full-stack web developer and software engineer." />
+  <meta property="og:image" content="assets/images/portfolio-showcase.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#hero" class="logo">Ravi<span>.</span></a>
+    
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li class="nav-resume-item">
+        <a href="assets/Sanapala_Ravi_Kumar_Resume.pdf" target="_blank" class="btn btn-sm btn-outline resume-btn">
+          <span>Resume</span>
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Sanapala Ravi Kumar</h1>
+      <h2>ECE Undergraduate at SVNIT Surat &amp; Software Developer</h2>
+      <p class="tagline">
+        Building fast, scalable backend systems, normalized relational databases, and clean web applications. Focused on Node.js, Express, MySQL, Python, and Data Structures.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn">
+          <span>Explore Projects</span>
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="assets/Sanapala_Ravi_Kumar_Resume.pdf" target="_blank" class="btn btn-outline">
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>View Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ravi-kumar-sanapala-a6336830a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:rksanapala95@gmail.com" aria-label="Email Me">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Overview</span>
+        <h3>About Me</h3>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am an <strong>Electronics and Communication Engineering</strong> undergraduate at <strong>Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat</strong> (graduating in 2027). My technical focus is rooted in building reliable full-stack applications, designing normalized database schemas, and engineering scalable RESTful APIs.
+          </p>
+          <p>
+            I have deep practical experience working with <strong>Node.js, Express, and MySQL</strong>, implementing JWT-based authentication, transaction handling, and role-based access control. In addition to web engineering, I work with <strong>Python, C++, and Data Structures &amp; Algorithms</strong> for efficient problem-solving.
+          </p>
+          <p>
+            Bridging hardware and software, I am also engaged in academic microwave sensor research (CSpRR simulation in CST Studio) and data reporting with Power BI and Tableau. I actively contribute as a <strong>Technical Member at the IETE Students Forum (ISF)</strong>.
+          </p>
+          <div class="about-actions">
+            <a href="assets/Sanapala_Ravi_Kumar_Resume.pdf" target="_blank" class="btn btn-outline">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <span>Download Full CV / Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-stats-cards">
+          <div class="stat-card">
+            <span class="stat-number">2027</span>
+            <span class="stat-label">Graduation Year (SVNIT Surat)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">98.03%</span>
+            <span class="stat-label">JEE Mains Percentile</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Full-Stack &amp; Core Tech Stacks</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">IETE</span>
+            <span class="stat-label">Technical Forum Member</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h3>Technical Skills</h3>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">💻</span>
+            <h4>Programming Languages</h4>
+          </div>
+          <div class="skills-tag-list">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>C (Basics)</span>
+          </div>
+        </div>
+
+        <!-- Web & Backend Development -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">🌐</span>
+            <h4>Web &amp; Backend Technologies</h4>
+          </div>
+          <div class="skills-tag-list">
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>REST APIs</span>
+            <span>HTML5 &amp; CSS3</span>
+            <span>React</span>
+            <span>JWT Auth</span>
+            <span>Multer</span>
+          </div>
+        </div>
+
+        <!-- Databases & Business Intelligence -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">🗄️</span>
+            <h4>Databases &amp; BI Tools</h4>
+          </div>
+          <div class="skills-tag-list">
+            <span>MySQL</span>
+            <span>Database Design</span>
+            <span>Normalized Schemas</span>
+            <span>Microsoft Excel</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+          </div>
+        </div>
+
+        <!-- Core Computer Science & Tools -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">⚙️</span>
+            <h4>Core CS &amp; Tools</h4>
+          </div>
+          <div class="skills-tag-list">
+            <span>DBMS</span>
+            <span>Data Structures &amp; Algorithms</span>
+            <span>OOP</span>
+            <span>Git &amp; GitHub</span>
+            <span>Postman</span>
+            <span>VS Code</span>
+            <span>CST Studio Suite</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills & Languages -->
+        <div class="skill-category-card span-full">
+          <div class="category-header">
+            <span class="category-icon">🤝</span>
+            <h4>Soft Skills &amp; Spoken Languages</h4>
+          </div>
+          <div class="skills-tag-list">
+            <span>Problem Solving</span>
+            <span>Team Leadership</span>
+            <span>Communication</span>
+            <span>Social Skills</span>
+            <span>English (Professional)</span>
+            <span>Telugu (Native)</span>
+            <span>Hindi (Proficient)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h3>Featured Projects</h3>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: Personal Finance Tracker API -->
+        <div class="card project-card">
+          <div class="card-img-wrapper">
+            <img src="assets/images/finance-tracker.png" onerror="this.onerror=null; this.src='assets/images/project-placeholder.svg';" alt="Personal Finance Tracker API Mockup" class="card-img"/>
+            <span class="badge-status">Backend API</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h4>Personal Finance Tracker API</h4>
+              <span class="project-timeline">Ongoing</span>
+            </div>
+            <p>
+              A robust RESTful backend API engineered with Node.js and Express. Features secure JWT authentication and bcrypt password hashing. Designed a normalized 5-table MySQL schema (users, accounts, categories, transactions, budgets) connected via pooled mysql2, implementing atomic transaction balance updates, pagination, and filtering.
+            </p>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MySQL</span>
+              <span>JWT</span>
+              <span>Bcrypt</span>
+              <span>Postman</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Appointy Doctor Booking Platform -->
+        <div class="card project-card">
+          <div class="card-img-wrapper">
+            <img src="assets/images/appointy-doctor-booking.png" onerror="this.onerror=null; this.src='assets/images/project-placeholder.svg';" alt="Appointy Doctor Appointment Booking Platform" class="card-img"/>
+            <span class="badge-status">Full-Stack</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h4>Appointy &ndash; Doctor Appointment Booking Platform</h4>
+              <span class="project-timeline">Completed</span>
+            </div>
+            <p>
+              Engineered a full-stack doctor appointment booking platform with distinct patient, doctor, and admin portals. Built with Role-Based Access Control (RBAC), JWT authentication, and bcrypt encryption. Integrated Multer for doctor profile uploads, fee calculation, mock payment processing, and comprehensive Postman test coverage.
+            </p>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MySQL</span>
+              <span>JWT</span>
+              <span>Multer</span>
+              <span>RBAC</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: CSpRR Sensor Simulation -->
+        <div class="card project-card">
+          <div class="card-img-wrapper">
+            <img src="assets/images/csprr-sensor-simulation.png" onerror="this.onerror=null; this.src='assets/images/project-placeholder.svg';" alt="CSpRR Microwave Sensor Simulation" class="card-img"/>
+            <span class="badge-status">Academic Research</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h4>CSpRR Sensor for Milk Adulteration Detection Using ML</h4>
+              <span class="project-timeline">Ongoing</span>
+            </div>
+            <p>
+              Designing and simulating a Circular Spiral Ring Resonator (CSpRR) planar microwave sensor in the 2.5–3.5 GHz band for non-invasive detection of water adulteration in milk. Shifts in dielectric constant correlate directly to resonant frequency shifts, with benchmark validation against published IEEE research literature.
+            </p>
+            <div class="tags">
+              <span>CST Studio</span>
+              <span>RF &amp; Microwave</span>
+              <span>Machine Learning</span>
+              <span>Simulation</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Developer Portfolio -->
+        <div class="card project-card">
+          <div class="card-img-wrapper">
+            <img src="assets/images/portfolio-showcase.png" onerror="this.onerror=null; this.src='assets/images/project-placeholder.svg';" alt="Developer Portfolio Website Showcase" class="card-img"/>
+            <span class="badge-status">Frontend</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h4>Personal Developer Portfolio Website</h4>
+              <span class="project-timeline">Live</span>
+            </div>
+            <p>
+              Designed and coded a fast, fully responsive portfolio website from scratch using vanilla HTML5, CSS3, and JavaScript. Features custom CSS variable theming, dynamic scrollspy navigation, Intersection Observer smooth transitions, mobile drawer navigation, and direct resume integration.
+            </p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+            </div>
+            <div class="card-links">
+              <a href="#hero" class="link-btn">
+                <span>View Live Demo &uarr;</span>
+              </a>
+              <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Academics</span>
+        <h3>Education</h3>
+      </div>
+      
+      <div class="education-list">
+        <!-- SVNIT -->
+        <div class="edu-card">
+          <div class="edu-left">
+            <span class="edu-badge">Undergraduate</span>
+            <h4>Bachelor of Technology &ndash; Electronics and Communication Engineering</h4>
+            <p class="edu-place">Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat</p>
+            <p class="edu-details">Core coursework: DBMS, Data Structures &amp; Algorithms, Object-Oriented Programming, Signals &amp; Systems, Microcontrollers.</p>
+          </div>
+          <div class="edu-right">
+            <span class="edu-percent">63.5%</span>
+            <p class="edu-year">2023 &mdash; 2027</p>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="edu-card">
+          <div class="edu-left">
+            <span class="edu-badge">Senior Secondary</span>
+            <h4>Board of Intermediate Education, Andhra Pradesh (MPC)</h4>
+            <p class="edu-place">Sri Chaitanya Junior Kalasala RB-1&amp;2</p>
+            <p class="edu-details">Mathematics, Physics, Chemistry focus. Solid foundation in mathematical reasoning and sciences.</p>
+          </div>
+          <div class="edu-right">
+            <span class="edu-percent">89.9%</span>
+            <p class="edu-year">2021 &mdash; 2023</p>
+          </div>
+        </div>
+
+        <!-- 10th Board -->
+        <div class="edu-card">
+          <div class="edu-left">
+            <span class="edu-badge">Secondary</span>
+            <h4>Board of Secondary Education, Andhra Pradesh (SSC-10th)</h4>
+            <p class="edu-place">Sri Chaitanya School</p>
+          </div>
+          <div class="edu-right">
+            <span class="edu-percent">95.33%</span>
+            <p class="edu-year">2020 &mdash; 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="certifications" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h3>Certifications &amp; Achievements</h3>
+      </div>
+      
+      <div class="cert-list">
+        <!-- Web Development Bootcamp -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <img src="assets/images/udemy-logo.png" alt="Udemy" class="cert-logo"/>
+          </div>
+          <div class="cert-info">
+            <h4>The Complete 2024 Full Stack Web Development Bootcamp</h4>
+            <p class="cert-issuer">Udemy &mdash; Dr. Angela Yu</p>
+            <p class="cert-desc">Full-stack web development program covering HTML5, CSS3, JavaScript, Node.js, Express.js, React, PostgreSQL, REST APIs, Git, and deployment.</p>
+          </div>
+          <div class="cert-right">
+            <span class="cert-badge">Credential</span>
+            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-71641607-a0cf-4bba-b5b3-92bdbf838077.jpg?v=1782707671000" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Swayam NPTEL DBMS -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <div class="cert-icon-fallback">🗄️</div>
+          </div>
+          <div class="cert-info">
+            <h4>Database Management Systems</h4>
+            <p class="cert-issuer">Swayam NPTEL &mdash; Government of India</p>
+            <p class="cert-desc">Comprehensive certification covering relational schema design, ER modeling, SQL querying, functional dependencies, indexing, and transaction management.</p>
+          </div>
+          <div class="cert-right">
+            <span class="cert-badge">Coursework</span>
+            <span class="cert-status">Completed</span>
+          </div>
+        </div>
+
+        <!-- JEE Mains -->
+        <div class="cert-card highlight-card">
+          <div class="cert-icon">
+            <div class="cert-icon-fallback">🏆</div>
+          </div>
+          <div class="cert-info">
+            <h4>Joint Entrance Examination (JEE) Mains 2023</h4>
+            <p class="cert-issuer">National Testing Agency (NTA), India</p>
+            <p class="cert-desc">Secured <strong>98.03 percentile</strong> among over 1.1 million engineering aspirants across India.</p>
+          </div>
+          <div class="cert-right">
+            <span class="cert-badge badge-accent">98.03%ile</span>
+            <span class="cert-status">2023</span>
+          </div>
+        </div>
+
+        <!-- IETE Forum -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <div class="cert-icon-fallback">👥</div>
+          </div>
+          <div class="cert-info">
+            <h4>Technical Member &ndash; IETE Students Forum (ISF)</h4>
+            <p class="cert-issuer">Institution of Electronics and Telecommunication Engineers, India</p>
+            <p class="cert-desc">Actively contributing to technical workshops, hands-on hardware/software initiatives, and campus tech events.</p>
+          </div>
+          <div class="cert-right">
+            <span class="cert-badge">Leadership</span>
+            <span class="cert-status">Present</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h3>Let's Connect</h3>
+      </div>
+
+      <div class="contact-box">
+        <p class="contact-subhead">
+          I am actively seeking software engineering internships, backend developer roles, and technical project collaborations. Whether you have an opportunity or just want to discuss tech, feel free to reach out!
+        </p>
+
+        <div class="contact-actions-row">
+          <a href="https://mail.google.com/mail/?view=cm&to=rksanapala95@gmail.com" target="_blank" rel="noopener noreferrer" class="btn">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Send Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ravi-kumar-sanapala-a6336830a" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="assets/Sanapala_Ravi_Kumar_Resume.pdf" target="_blank" class="btn btn-ghost">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- Email card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-card-content">
+              <span class="contact-label">Email</span>
+              <a href="mailto:rksanapala95@gmail.com" class="contact-value" id="emailVal">rksanapala95@gmail.com</a>
+            </div>
+            <button class="copy-btn" onclick="copyToClipboard('rksanapala95@gmail.com', this)" title="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </div>
+
+          <!-- Phone card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">📞</div>
+            <div class="contact-card-content">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918341284894" class="contact-value" id="phoneVal">+91 8341284894</a>
+            </div>
+            <button class="copy-btn" onclick="copyToClipboard('+918341284894', this)" title="Copy phone number">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </div>
+
+          <!-- GitHub card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/Sravikumar95</a>
+            </div>
+            <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Visit GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+
+          <!-- Location card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">📍</div>
+            <div class="contact-card-content">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">SVNIT, Surat, Gujarat, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">Copied to clipboard!</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sanapala Ravi Kumar &bull; Built with passion, HTML, CSS &amp; JS</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top &uarr;</a>
+        <a href="assets/Sanapala_Ravi_Kumar_Resume.pdf" target="_blank">Resume PDF</a>
+        <a href="https://github.com/Sravikumar95" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ravi-kumar-sanapala-a6336830a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

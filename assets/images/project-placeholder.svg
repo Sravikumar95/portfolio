@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+  <defs>
+    <pattern id="code-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e3a5f" stroke-width="0.6"/>
+    </pattern>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" rx="12" fill="url(#card-grad)"/>
+  <rect width="600" height="340" rx="12" fill="url(#code-grid)"/>
+  <!-- Code lines simulation -->
+  <rect x="40" y="80" width="180" height="8" rx="4" fill="#3b82f6" opacity="0.6"/>
+  <rect x="40" y="104" width="260" height="8" rx="4" fill="#475569" opacity="0.5"/>
+  <rect x="40" y="128" width="140" height="8" rx="4" fill="#475569" opacity="0.4"/>
+  <rect x="40" y="152" width="220" height="8" rx="4" fill="#6366f1" opacity="0.5"/>
+  <rect x="40" y="176" width="170" height="8" rx="4" fill="#475569" opacity="0.4"/>
+  <rect x="40" y="200" width="200" height="8" rx="4" fill="#3b82f6" opacity="0.3"/>
+  <!-- Window dots -->
+  <circle cx="32" cy="32" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="52" cy="32" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="72" cy="32" r="6" fill="#22c55e" opacity="0.8"/>
+  <line x1="0" y1="52" x2="600" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Label -->
+  <rect x="380" y="240" width="160" height="40" rx="8" fill="#1d4ed8" opacity="0.2"/>
+  <text x="460" y="265" font-family="monospace" font-size="13" fill="#60a5fa" text-anchor="middle" opacity="0.9">Project Preview</text>
+</svg>

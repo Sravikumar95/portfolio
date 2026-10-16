@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="300" viewBox="0 0 1440 300">
+  <defs>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.2" fill="#1e3a5f" opacity="0.8"/>
+    </pattern>
+    <linearGradient id="fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="300" fill="url(#fade)"/>
+  <rect width="1440" height="300" fill="url(#dots)"/>
+  <!-- Horizontal accent lines -->
+  <line x1="0" y1="1" x2="1440" y2="1" stroke="#1e3a5f" stroke-width="1"/>
+  <line x1="0" y1="299" x2="1440" y2="299" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Glow blob -->
+  <ellipse cx="720" cy="150" rx="400" ry="100" fill="#1d4ed8" opacity="0.06"/>
+</svg>
