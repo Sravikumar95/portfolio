@@ -244,7 +244,7 @@
               <span class="project-timeline">Ongoing</span>
             </div>
             <p>
-              A robust RESTful backend API engineered with Node.js and Express. Features secure JWT authentication and bcrypt password hashing. Designed a normalized 5-table MySQL schema (users, accounts, categories, transactions, budgets) connected via pooled mysql2, implementing atomic transaction balance updates, pagination, and filtering.
+              A RESTful personal finance tracker API built with Node.js, Express, and MySQL featuring JWT auth, bcrypt password hashing, and rate limiting. Implemented atomic fund transfers using database transactions with row-level locking (SELECT ... FOR UPDATE) verifying zero balance drift under 40 parallel transfers. Features SQL window analytics (LAG, RANK) and Z-score outlier detection over 55,000+ transactions, optimizing queries down to 10 ms.
             </p>
             <div class="tags">
               <span>Node.js</span>
@@ -375,7 +375,7 @@
             <p class="edu-details">Core coursework: DBMS, Data Structures &amp; Algorithms, Object-Oriented Programming, Signals &amp; Systems, Microcontrollers.</p>
           </div>
           <div class="edu-right">
-            <span class="edu-percent">63.5%</span>
+            <span class="edu-percent">6.35 CGPA</span>
             <p class="edu-year">2023 &mdash; 2027</p>
           </div>
         </div>
